@@ -1,0 +1,39 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "AccountTest",
+            "request": "launch",
+            "mainClass": "AccountTest"
+        },
+        {
+            "name": "Run Current Java File (Direct)",
+            "type": "node-terminal",
+            "request": "launch",
+            "command": "cd '${fileDirname}' && javac '${fileBasename}' && java '${fileBasenameNoExtension}'",
+            "cwd": "${fileDirname}"
+        },
+        {
+            "name": "Run Multi-File Java Program",
+            "type": "node-terminal",
+            "request": "launch",
+            "command": "cd '${fileDirname}' && javac *.java && java '${input:mainClassName}'",
+            "cwd": "${fileDirname}"
+        },
+        {
+            "name": "Compile All and Run",
+            "type": "node-terminal",
+            "request": "launch",
+            "command": "cd '${fileDirname}' && javac *.java && java '${input:mainClassName}'",
+            "cwd": "${fileDirname}"
+        }
+    ],
+    "inputs": [
+        {
+            "id": "mainClassName",
+            "description": "Enter the main class name (without .java extension)",
+            "type": "promptString"
+        }
+    ]
+}
