@@ -18,7 +18,7 @@ public class Sort3 {
       System.out.printf("Unsorted array elements:%n%s%n", list);
 
       // sort in order using a comparator          
-      Collections.sort(list, new TimeComparator());
+      Collections.sort(list, new TimeComparator().reversed());
 
       // output List elements
       System.out.printf("Sorted list elements:%n%s%n", list);

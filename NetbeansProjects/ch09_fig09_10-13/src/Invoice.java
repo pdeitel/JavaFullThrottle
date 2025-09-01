@@ -2,7 +2,7 @@
 // Invoice class that implements Payable.
 import java.math.BigDecimal;
 
-public class Invoice implements Payable {
+public class Invoice extends Object implements Payable {
    private final String partNumber; 
    private final String partDescription;
    private final int quantity;

@@ -34,6 +34,7 @@ public class Records {
       System.out.printf("e2.equals(e3): %b%n%n", e2.equals(e3));
 
       System.out.println("Creating Employee with invalid salary:");
+      System.setErr(System.out);
       Employee e4 = new Employee("Isabella", "Garcia", -1000, "IT");
    }
 }

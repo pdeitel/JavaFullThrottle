@@ -37,6 +37,10 @@ if (grade >= 90) {
 }
 
 
+// Conditional Expression
+int grade = 80;
+System.out.println(grade >= 60 ? "Passed" : "Failed");
+
 // while: first power of 3 greater than 100
 int product = 3;
 
@@ -45,9 +49,6 @@ while (product <= 100) {
 }
 
 
-// Conditional Expression
-int grade = 80;
-System.out.println(grade >= 60 ? "Passed" : "Failed");
 
 
 /***************************************************************
